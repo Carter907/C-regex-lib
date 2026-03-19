@@ -10,7 +10,7 @@ VER = c23
 BUILD_DIR = ./build
 ASM_DIR = ./build/asm
 
-CFLAGS = -std=$(VER) -g -Wall -Werror -Wconversion -fanalyzer -fsanitize=undefined -fsanitize-trap=undefined
+CFLAGS = -std=$(VER) -g -Wall -Werror -Wconversion -fanalyzer -fsanitize=undefined,address,leak -fsanitize-trap=undefined
 AFLAGS = -S -masm=intel
 
 LIBS = 
