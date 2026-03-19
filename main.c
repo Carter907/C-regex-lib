@@ -55,7 +55,7 @@ char **match_regex(const char *regex_string, const char *input_string,
     s += pmatch[0].rm_eo; // move string ptr past this match
   }
 
-	regfree(&regex);
+  regfree(&regex);
 
   return matches;
 }
