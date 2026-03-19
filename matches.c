@@ -14,9 +14,10 @@ char *creg_matches(const char *const src, regoff_t *off, char *regex_string) {
     return NULL;
   }
 
-  *off = pmatch[0].rm_so len = pmatch[0].rm_eo - pmatch[0].rm_so;
+  *off = pmatch[0].rm_so;
+	len = pmatch[0].rm_eo - pmatch[0].rm_so;
 
   regfree(&regex);
 
-  return strndup(src + off, (size_t)len);
+  return strndup(src + *off, (size_t)len);
 }
