@@ -1,5 +1,3 @@
-#define _XOPEN_SOURCE 700
-
 #include <regex.h>
 #include <stdint.h>
 #include <stdio.h>

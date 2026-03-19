@@ -3,7 +3,7 @@ CD = gdb
 
 PROG_NAME = app
 
-SOURCES = main.c
+SOURCES = main.c matches.c
 
 VER = c23
 
